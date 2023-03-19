@@ -19,8 +19,8 @@ services:
       dockerfile: php-cli/Dockerfile
     volumes:
       - ./client-request-processor:/app
-      - ./client-request-processor/docker/supervisord/supervisord.conf:/etc/supervisor/supervisord.conf
-      - ./client-request-processor/docker/supervisord/supervisord-programs.conf:/etc/supervisor/conf.d/app.conf
+#      - ./client-request-processor/docker/supervisord/supervisord.conf:/etc/supervisor/supervisord.conf
+#      - ./client-request-processor/docker/supervisord/supervisord-programs.conf:/etc/supervisor/conf.d/app.conf
     command: [ "supervisord", "-c", "/etc/supervisor/supervisord.conf" ]
     tty: true
     depends_on:
