@@ -7,6 +7,8 @@ use Symfony\Component\Dotenv\Dotenv;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
+define('ROOT_PATH', dirname(__DIR__) . '/');
+
 $dotenv = new Dotenv(true);
 $dotenv->load(__DIR__ . '/../.env');
 
