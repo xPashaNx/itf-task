@@ -1,10 +1,10 @@
-FROM php:8.0.13-cli-alpine
+FROM php:7.4-cli-alpine
 
 ENV DEPS \
     autoconf \
     g++ \
     libtool \
-    pcre-dev
+        pcre-dev
 
 RUN apk update\
     && apk add --no-cache ca-certificates bash make git\
@@ -16,7 +16,8 @@ RUN apk update\
     # xdebug
     && pecl install xdebug-3.0.1 \
     && rm -rf /tmp/pear \
-    && docker-php-ext-enable xdebug
+    && docker-php-ext-enable xdebug \
+    && docker-php-ext-install bcmath
 
 # Install SUPERVISOR
 RUN apk add --no-cache supervisor \

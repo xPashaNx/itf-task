@@ -1,0 +1,14 @@
+{
+    "name": "itf-task/processor",
+    "description": "task",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ItfTask\\Processor\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php-amqplib/php-amqplib": "^2.8"
+    }
+}

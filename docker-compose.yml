@@ -1,13 +1,13 @@
 version: "3.7"
 
 services:
-  client-request-emmiter:
-    container_name: client-request-emmiter.php-cli
+  client-request-emitter:
+    container_name: client-request-emitter.php-cli
     build:
-      context: client-request-emmiter/docker
+      context: client-request-emitter/docker
       dockerfile: php-cli/Dockerfile
     volumes:
-      - ./client-request-emmiter:/app
+      - ./client-request-emitter:/app
     tty: true
     depends_on:
       - rabbitmq

@@ -1,0 +1,18 @@
+{
+    "name": "itf-task/emitter",
+    "description": "task",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ItfTask\\Emitter\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "vladimir163/lead-generator": "dev-master",
+        "php-amqplib/php-amqplib": "^2.0",
+        "php-di/php-di": "^6.4",
+        "laminas/laminas-config-aggregator": "^1.9",
+        "symfony/dotenv": "^5.4"
+    }
+}
