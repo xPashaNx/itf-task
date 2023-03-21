@@ -39,4 +39,4 @@ processor-composer-require:
 	docker-compose run --rm client-request-processor composer require ${name}
 
 processor-run:
-	docker-compose run --rm client-request-processor php cli/index.php ${count}
+	docker-compose run --rm client-request-processor php cli/index.php

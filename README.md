@@ -34,7 +34,7 @@
     docker-compose run --rm client-request-processor composer install
 
 ### Запуск теста
-    processor-run count=10000
+    make emitter-run count=10000
 
     // use docker
-    docker-compose run --rm client-request-processor php cli/index.php 10000
+    docker-compose run --rm client-request-emitter php cli/index.php 10000
